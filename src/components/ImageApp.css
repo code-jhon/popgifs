@@ -17,3 +17,38 @@
 .logo{
   font-size: 20px;
 }
+
+/* SearchComponent styles */
+label{
+  margin-top:10px;
+  font-weight: bold;
+}
+
+.form-control.Input{
+  border : 2px solid #5b2074;
+  border-radius : 0px;
+  background-color: #d7d7d9;
+}
+
+.form-control.Input:focus {
+  background-color: #d7d7d9;
+  border-color: #5b2074;
+}
+
+.col-md-2.search-box{
+  display: flex;
+  align-items: flex-end;
+  padding-left:0px;
+}
+
+.btn.search-button{
+  background-color: #5b2074;
+  color: #fff;
+  width: 159px;
+  border-radius : 0px;
+}
+
+.btn.search-button:hover{
+  background-color: #5b2074;
+} 
+
