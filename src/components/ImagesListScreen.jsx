@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import HeaderComponent from "./HeaderComponent";
-import SearchComponent from './SearchComponent'
+import SearchComponent from './SearchComponent';
+import ResultsComponent from './ResultsComponent';
 import './ImageApp.css';
 
 class ImagesListScreen extends Component {
@@ -12,6 +13,9 @@ class ImagesListScreen extends Component {
         <Container>
           <Row>
             <Col><SearchComponent/></Col>          
+          </Row>
+          <Row>
+            <Col><ResultsComponent/></Col>
           </Row>
         </Container>
       </div>
