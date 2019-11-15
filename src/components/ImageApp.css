@@ -1,0 +1,19 @@
+/* headerBar styles */
+.headerBar{
+  /* Generated with http://cssgradient.io*/
+  background: rgb(2,0,36);
+  background: linear-gradient(0deg, rgb(2,0,36, 1) 0%, rgba(97,33,119,1) 96%, rgba(97,33,119,1) 100%);
+
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text-green{
+  color: #7dd12c;
+  font-weight: bold;
+}
+
+.logo{
+  font-size: 20px;
+}
