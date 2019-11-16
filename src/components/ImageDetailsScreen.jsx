@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Row } from 'reactstrap';
+import { Container, Row, Label } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 import HeaderComponent from "./HeaderComponent";
@@ -19,16 +19,18 @@ class ImageDetailsScreen extends Component {
           id && this.props.getSearchId(id);
   }
 
-  render(){  
+  render(){ 
+    const item = this.props.selected,
+          image_title = item && item.title; 
     return (
       <div>
         <HeaderComponent/>
         <Container>
           <Row>
-            <Link to="/">{"<"}</Link>
+            <Label><Link to="/">{`< ${image_title}`}</Link></Label>           
           </Row>
           <Row>
-            <DetailComponent item={this.props.selected}/>
+            <DetailComponent item={item}/>
           </Row>
         </Container>
       </div>
