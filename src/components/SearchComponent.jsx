@@ -1,10 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {search} from "./lib/giphy";
 import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
-const SearchComponent = (props) => {
+const SearchComponent = () => {
+
+  const [searchInput, setSearchInput] = useState('');
 
   const handleClick = (evt) => {
     evt.preventDefault();
+    search(searchInput)
+  };
+
+  const handleChange = (evt) => {
+    setSearchInput(evt.target.value);
   }
   
   return (
@@ -14,7 +22,7 @@ const SearchComponent = (props) => {
           <Col md={10}>
             <FormGroup>
               <Label for="search">Search your interests</Label>
-              <Input type="text" name="search" id="search" className="Input" />
+              <Input type="text" name="search" id="search" value={searchInput} onChange={handleChange} className="Input" />
             </FormGroup>
           </Col>
           <Col md={2} className="search-box">
