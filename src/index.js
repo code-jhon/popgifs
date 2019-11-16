@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import ImagesListScreen from './components/ImagesListScreen'
+import ImageDetailsScreen from "./components/ImageDetailsScreen";
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css'
+
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
@@ -15,7 +18,10 @@ const store      = createStore(reducer, middleware);
 
 ReactDOM.render(
   <Provider store={store}>
-    <ImagesListScreen />
+    <Router>
+      <Route exact path="/" component={ImagesListScreen} />
+      <Route path="/detail" component={ImageDetailsScreen} />
+    </Router>
   </Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
