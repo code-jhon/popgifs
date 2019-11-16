@@ -20,7 +20,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route exact path="/" component={ImagesListScreen} />
-      <Route path="/detail" component={ImageDetailsScreen} />
+      <Route exact path="/detail/" component={ImageDetailsScreen} />
+      <Route exact path="/detail/:id" component={ImageDetailsScreen} />
     </Router>
   </Provider>, document.getElementById('root'));
 
