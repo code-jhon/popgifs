@@ -24,4 +24,4 @@ const ResultItemComponent = (props) => {
   return item;
 }
 
-export default ResultItemComponent;
+export default ResultItemComponent; 
