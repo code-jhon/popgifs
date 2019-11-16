@@ -2,36 +2,28 @@ import React from 'react';
 import { Row } from 'reactstrap';
 import ResultItemComponent from "./ResultItemComponent";
 
+import { connect } from 'react-redux';
+
 const ResultsComponent = (props) => {
+  const data       = props && props.elements.data,
+        pagination = props && props.elements.pagination;
 
-  const elements = [
-    // {title: "Wow", link: 'https://media.giphy.com/media/65D9lmbH8Nn8KKQRqR/source.gif'},
-    // {title: "Overwatch", link: 'https://media.giphy.com/media/xT4uQ8A5wJ1X0OsD3G/source.gif'},
-    // {title: "Fortnite", link: 'https://media.giphy.com/media/65VBy9Ccvyww9or9IR/giphy.gif'},
-    // {title: "Fortnite", link: 'https://media.giphy.com/media/65VBy9Ccvyww9or9IR/giphy.gif'},
-    // {title: "Fortnite", link: 'https://media.giphy.com/media/65VBy9Ccvyww9or9IR/giphy.gif'},
-    // {title: "Fortnite", link: 'https://media.giphy.com/media/65VBy9Ccvyww9or9IR/giphy.gif'},
-    // {title: "Fortnite", link: 'https://media.giphy.com/media/65VBy9Ccvyww9or9IR/giphy.gif'},
-    // {title: "Fortnite", link: 'https://media.giphy.com/media/65VBy9Ccvyww9or9IR/giphy.gif'},
-
-  ]
-
-  const handleItems = (items) => {
+  const handleItems = (data, pagination) => {
     let result  = false,
         message = 'No results';
-    if(items && items.length > 1){
-      result = items.map(item => {  
+    if(data && data.length > 1){
+      result = data.map(item => {  
           const title = item && item.title,
-                link   = item && item.link;
+                url   = item && item.images.downsized.url,
+                key   = item && item.id;
   
-          return (
-            <ResultItemComponent title={title} link={link} />
-          );
+          return <ResultItemComponent title={title} link={url} key={key} />;
         })
       
     }else{
-      result = <ResultItemComponent title={false} link={false} message={message} />
+      return <ResultItemComponent title={false} link={false} message={message} key="0"/>;
     }
+
     return result;
   }
   
@@ -39,10 +31,15 @@ const ResultsComponent = (props) => {
   return (
     <div className="items-context">
       <Row className="items-box">
-        {handleItems(elements)}
+        {handleItems(data, pagination)}
       </Row>
     </div>
   )
 }
 
-export default ResultsComponent;
+const mapStateToProps = state => ({elements: state.results});
+
+export default connect(
+  mapStateToProps, 
+  {}
+)(ResultsComponent);

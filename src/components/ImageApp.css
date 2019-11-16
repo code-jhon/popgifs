@@ -73,7 +73,7 @@ html{height: 100%;}
   display : inline-block;
 
   width: 240px;
-  margin: 0 0 1em;
+  max-width: 240px;
 }
 
 .result-item:hover{
@@ -84,14 +84,15 @@ html{height: 100%;}
 
 .item-title{
   position: relative;
-  top: -40px;
-  margin-right: 25px;
-  color:#fff;
+  top: -15px;
+  margin-right: 26px;
+  color: #fff;
   background-color: #000;
-  padding-left: 10px;
+  padding-left: 11px;
   max-width: 320px;
   opacity: .7;
   font-weight: bold;
-
+  font-size: 10px;
+  text-align: right;
 }
 

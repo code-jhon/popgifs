@@ -1,10 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
+import { connect } from 'react-redux';
+import { getSearch } from './lib/actions';
+
 import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 const SearchComponent = (props) => {
 
+  const [searchInput, setSearchInput] = useState('');
+
   const handleClick = (evt) => {
     evt.preventDefault();
+    props.getSearch(searchInput)
+  };
+
+  const handleChange = (evt) => {
+    setSearchInput(evt.target.value);
   }
   
   return (
@@ -14,7 +24,7 @@ const SearchComponent = (props) => {
           <Col md={10}>
             <FormGroup>
               <Label for="search">Search your interests</Label>
-              <Input type="text" name="search" id="search" className="Input" />
+              <Input type="text" name="search" id="search" value={searchInput} onChange={handleChange} className="Input" />
             </FormGroup>
           </Col>
           <Col md={2} className="search-box">
@@ -28,4 +38,10 @@ const SearchComponent = (props) => {
   );
 }
 
-export default SearchComponent;
+const mapStateToProps = state => ({results:state.results.entries}); /** Adapter state - component */
+
+/** HOC, curry pattern to extend redux states into component */
+export default connect(
+  mapStateToProps,
+  { getSearch }
+)(SearchComponent); 
