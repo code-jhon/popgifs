@@ -13,7 +13,7 @@ const ResultItemComponent = (props) => {
   }else{
     item = <Col>
               <div >
-                <img className="result-item sepia" src={source} />
+                <img className="result-item sepia" src={source} alt="abc" />
                 <div className="item-title">
                   {title}
                 </div>
