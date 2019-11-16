@@ -8,7 +8,6 @@ export const search = (term) => {
     response => response.json()
   ).then(
     (gifs) => {
-      console.log(gifs, "gifs");
       gifs_resp = gifs;
     }
   )
