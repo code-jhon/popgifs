@@ -5,10 +5,9 @@ import ResultItemComponent from "./ResultItemComponent";
 import { connect } from 'react-redux';
 
 const ResultsComponent = (props) => {
-  const data       = props && props.elements.data,
-        pagination = props && props.elements.pagination;
+  const data       = props && props.elements.data;
 
-  const handleItems = (data, pagination) => {
+  const handleItems = (data) => {
     let result  = false,
         message = 'No results';
     if(data && data.length > 1){
@@ -17,7 +16,7 @@ const ResultsComponent = (props) => {
                 url   = item && item.images.downsized.url,
                 key   = item && item.id;
   
-          return <ResultItemComponent title={title} link={url} key={key} />;
+          return <ResultItemComponent title={title} link={url} key={key} id={key} />;
         })
       
     }else{
@@ -31,7 +30,7 @@ const ResultsComponent = (props) => {
   return (
     <div className="items-context">
       <Row className="items-box">
-        {handleItems(data, pagination)}
+        {handleItems(data)}
       </Row>
     </div>
   )
