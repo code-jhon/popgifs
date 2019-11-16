@@ -44,11 +44,54 @@ label{
 .btn.search-button{
   background-color: #5b2074;
   color: #fff;
-  width: 159px;
+  width: 174px;
   border-radius : 0px;
 }
 
 .btn.search-button:hover{
   background-color: #5b2074;
 } 
+
+/* ResultItem styles */
+.sepia {
+  -webkit-filter:sepia(100%);
+  filter:sepia(100%);
+}
+
+html{height: 100%;}
+
+.items-context{
+  column-count : 4;
+  column-gap : 1em;
+}
+
+.items-box{
+  min-height: 900px;
+}
+
+.result-item{
+  display : inline-block;
+
+  width: 240px;
+  margin: 0 0 1em;
+}
+
+.result-item:hover{
+  filter:sepia(0%);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.item-title{
+  position: relative;
+  top: -40px;
+  margin-right: 25px;
+  color:#fff;
+  background-color: #000;
+  padding-left: 10px;
+  max-width: 320px;
+  opacity: .7;
+  font-weight: bold;
+
+}
 
