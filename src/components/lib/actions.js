@@ -19,11 +19,3 @@ export const getSearch = term => async dispatch => {
     })
   }
 }
-
-export const helloWorld = () => async dispatch => {
-  let str = "HOLA MUNDOOOOO";
-  dispatch({
-    type : actionTypes.HELLO,
-    payload : str
-  })
-}
