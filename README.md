@@ -4,7 +4,7 @@ This project was bootstrapped with blessed [Create React App](https://github.com
 I'm trying to manage this app as a real-project with multiple collaborators and that's why I'm using the [Project](https://github.com/javilaotz/popgifs/projects/1) tab.
 
 ## Loom videos
-I like to use loom to share contents so that's my [loom](https://loom.com/share/folder/655a12d3) folder for this project 
+I like to use loom to share contents so that's my [loom folder](https://loom.com/share/folder/655a12d3ab7745568f21500bbbfc8445) for this project 
 
 ### Follow me!
 You can find me in twitter [@javilaortiz](https://twitter.com/javilaortiz) and facebook [javilaortiz](https://facebook.com/javilaortiz)
