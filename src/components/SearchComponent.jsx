@@ -10,9 +10,7 @@ const SearchComponent = (props) => {
 
   const handleClick = (evt) => {
     evt.preventDefault();
-    console.log(props)
     props.getSearch(searchInput)
-    //helloWorld();
   };
 
   const handleChange = (evt) => {
