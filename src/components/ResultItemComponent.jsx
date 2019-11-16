@@ -8,7 +8,7 @@ const ResultItemComponent = (props) => {
   return (
     <Col>
       <div >
-        <img className="result-item" src={source} />
+        <img className="result-item sepia" src={source} />
         <div className="item-title">
           {title}
         </div>
