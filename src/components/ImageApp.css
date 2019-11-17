@@ -96,3 +96,41 @@ html{height: 100%;}
   text-align: right;
 }
 
+
+/** ImageDetails styles */
+.backLink{
+  font-family: "Courier New";
+  color:#000;
+}
+
+.backLink:hover{
+  text-decoration: none;
+}
+
+.bigPic-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details-container{
+  font-family: "Courier New";
+}
+
+.detailLabel{
+  font-size:12px;
+  font-weight: bold;
+}
+
+.detailText{
+  font-size:10px;
+  font-style: italic;
+}
+
+.gif-player{
+  cursor: pointer;
+  width: 800px;
+}
+
+.reset-styles{
+  all:unset;
+}
