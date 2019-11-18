@@ -5,6 +5,8 @@ import ImagesListScreen from './components/ImagesListScreen'
 import ImageDetailsScreen from "./components/ImageDetailsScreen";
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
