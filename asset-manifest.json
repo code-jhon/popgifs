@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "javilaotz.github.io/popgifs/static/css/main.026b48aa.chunk.css",
-    "main.js": "javilaotz.github.io/popgifs/static/js/main.e6084f88.chunk.js",
-    "main.js.map": "javilaotz.github.io/popgifs/static/js/main.e6084f88.chunk.js.map",
-    "runtime-main.js": "javilaotz.github.io/popgifs/static/js/runtime-main.0a2569e1.js",
-    "runtime-main.js.map": "javilaotz.github.io/popgifs/static/js/runtime-main.0a2569e1.js.map",
-    "static/css/2.f496e279.chunk.css": "javilaotz.github.io/popgifs/static/css/2.f496e279.chunk.css",
-    "static/js/2.009880ae.chunk.js": "javilaotz.github.io/popgifs/static/js/2.009880ae.chunk.js",
-    "static/js/2.009880ae.chunk.js.map": "javilaotz.github.io/popgifs/static/js/2.009880ae.chunk.js.map",
-    "index.html": "javilaotz.github.io/popgifs/index.html",
-    "precache-manifest.219798a67a2bfbeb979f372abd085de1.js": "javilaotz.github.io/popgifs/precache-manifest.219798a67a2bfbeb979f372abd085de1.js",
-    "service-worker.js": "javilaotz.github.io/popgifs/service-worker.js",
-    "static/css/2.f496e279.chunk.css.map": "javilaotz.github.io/popgifs/static/css/2.f496e279.chunk.css.map",
-    "static/css/main.026b48aa.chunk.css.map": "javilaotz.github.io/popgifs/static/css/main.026b48aa.chunk.css.map",
-    "static/media/slick-theme.css": "javilaotz.github.io/popgifs/static/media/slick.f97e3bbf.svg"
+    "main.css": "/gifmanager/static/css/main.026b48aa.chunk.css",
+    "main.js": "/gifmanager/static/js/main.0f2246ee.chunk.js",
+    "main.js.map": "/gifmanager/static/js/main.0f2246ee.chunk.js.map",
+    "runtime-main.js": "/gifmanager/static/js/runtime-main.02e54fc2.js",
+    "runtime-main.js.map": "/gifmanager/static/js/runtime-main.02e54fc2.js.map",
+    "static/css/2.ce05d089.chunk.css": "/gifmanager/static/css/2.ce05d089.chunk.css",
+    "static/js/2.009880ae.chunk.js": "/gifmanager/static/js/2.009880ae.chunk.js",
+    "static/js/2.009880ae.chunk.js.map": "/gifmanager/static/js/2.009880ae.chunk.js.map",
+    "index.html": "/gifmanager/index.html",
+    "precache-manifest.4f94029cc3d6fdd17b4ffc6b47215e14.js": "/gifmanager/precache-manifest.4f94029cc3d6fdd17b4ffc6b47215e14.js",
+    "service-worker.js": "/gifmanager/service-worker.js",
+    "static/css/2.ce05d089.chunk.css.map": "/gifmanager/static/css/2.ce05d089.chunk.css.map",
+    "static/css/main.026b48aa.chunk.css.map": "/gifmanager/static/css/main.026b48aa.chunk.css.map",
+    "static/media/slick-theme.css": "/gifmanager/static/media/slick.f97e3bbf.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0a2569e1.js",
-    "static/css/2.f496e279.chunk.css",
+    "static/js/runtime-main.02e54fc2.js",
+    "static/css/2.ce05d089.chunk.css",
     "static/js/2.009880ae.chunk.js",
     "static/css/main.026b48aa.chunk.css",
-    "static/js/main.e6084f88.chunk.js"
+    "static/js/main.0f2246ee.chunk.js"
   ]
 }
