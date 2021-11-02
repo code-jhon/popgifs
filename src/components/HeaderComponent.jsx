@@ -4,8 +4,8 @@ const HeaderComponent = (props) => {
   return (
       <div className="headerBar">
         <div className="logo">
-          <span className="text-white">Pop</span>
-          <span className="text-green">Gifs</span>
+          <span className="text-white">Gif</span>
+          <span className="text-green">Scanner</span>
           <span className="text-white">!</span>
         </div>        
       </div>
