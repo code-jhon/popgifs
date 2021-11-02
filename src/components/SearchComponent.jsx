@@ -23,7 +23,7 @@ const SearchComponent = (props) => {
         <Row>
           <Col md={10}>
             <FormGroup>
-              <Label for="search">Search your interests</Label>
+              <Label for="search">Search your own gif</Label>
               <Input type="text" name="search" id="search" value={searchInput} onChange={handleChange} className="Input" />
             </FormGroup>
           </Col>
