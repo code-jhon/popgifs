@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { connect } from 'react-redux';
-import { getSearch, helloWorld } from './lib/actions';
+import { getSearch } from './lib/actions';
 
 import { Col, Row, Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
@@ -23,7 +23,7 @@ const SearchComponent = (props) => {
         <Row>
           <Col md={10}>
             <FormGroup>
-              <Label for="search">Search your interests</Label>
+              <Label for="search">Search your own gif</Label>
               <Input type="text" name="search" id="search" value={searchInput} onChange={handleChange} className="Input" />
             </FormGroup>
           </Col>
@@ -38,10 +38,10 @@ const SearchComponent = (props) => {
   );
 }
 
-const mapStateToProps = state => ({results:state.results}); /** Adapter state - component */
+const mapStateToProps = state => ({results:state.results.entries}); /** Adapter state - component */
 
 /** HOC, curry pattern to extend redux states into component */
 export default connect(
   mapStateToProps,
-  { getSearch, helloWorld }
+  { getSearch }
 )(SearchComponent); 

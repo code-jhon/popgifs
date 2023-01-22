@@ -20,10 +20,20 @@ export const getSearch = term => async dispatch => {
   }
 }
 
-export const helloWorld = () => async dispatch => {
-  let str = "HOLA MUNDOOOOO";
+export const getSearchId = term => async dispatch => {
   dispatch({
-    type : actionTypes.HELLO,
-    payload : str
-  })
+    type: actionTypes.SEARCH_ID_REQUEST
+  });
+  try {
+    const results = await giphy.searchId(term);
+    dispatch({
+      type : actionTypes.SEARCH_ID_SUCCESS,
+      payload: results.data
+    })
+  } catch (e) {
+    dispatch({
+      type: actionTypes.SEARCH_ID_FAILURE,
+      payload: e
+    })
+  }
 }

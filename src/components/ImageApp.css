@@ -73,7 +73,7 @@ html{height: 100%;}
   display : inline-block;
 
   width: 240px;
-  margin: 0 0 1em;
+  max-width: 240px;
 }
 
 .result-item:hover{
@@ -84,14 +84,53 @@ html{height: 100%;}
 
 .item-title{
   position: relative;
-  top: -40px;
-  margin-right: 25px;
-  color:#fff;
+  top: -15px;
+  margin-right: 26px;
+  color: #fff;
   background-color: #000;
-  padding-left: 10px;
+  padding-left: 11px;
   max-width: 320px;
   opacity: .7;
   font-weight: bold;
-
+  font-size: 10px;
+  text-align: right;
 }
 
+
+/** ImageDetails styles */
+.backLink{
+  font-family: "Courier New";
+  color:#000;
+}
+
+.backLink:hover{
+  text-decoration: none;
+}
+
+.bigPic-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.details-container{
+  font-family: "Courier New";
+}
+
+.detailLabel{
+  font-size:12px;
+  font-weight: bold;
+}
+
+.detailText{
+  font-size:10px;
+  font-style: italic;
+}
+
+.gif-player{
+  cursor: pointer;
+  width: 800px;
+}
+
+.reset-styles{
+  all:unset;
+}

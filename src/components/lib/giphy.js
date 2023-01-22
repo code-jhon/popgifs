@@ -1,8 +1,7 @@
 import {api_key} from './data';
 
 export const search = (term) => {
-  let URL       = `http://api.giphy.com/v1/gifs/search?q=${term}&api_key=${api_key}`,
-        gifs_resp = '';
+  let URL = `http://api.giphy.com/v1/gifs/search?q=${term}&api_key=${api_key}`;
 
   fetch(URL).then(
     response => response.json()
@@ -12,5 +11,13 @@ export const search = (term) => {
     }
   )
 
-  return gifs_resp;
+
+
+export const searchId = (id) => {
+  let URL = `https://api.giphy.com/v1/gifs/${id}?api_key=${api_key}`;
+
+  return Promise.resolve(
+    fetch(URL).then(
+      response => response.json()
+    ).then(gif => gif));
 }
